@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: aliceblue;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}
+
+/* productos */
+
+.producto img {
+
+}
+
+@media (min-width: 768px) {
+    .producto img {
+        height: 43rem;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.categoria img {
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.categoria img:hover {
+    transform: scale(1.2);
+
+}
+
+/* galeria */
+
+.galeria img {
+    margin-bottom: 1rem;
+}
+
+.galeria img:last-of-type {  /* poner margin bottom a todas las iamgenes menos a al ultima de la lista */
+    margin-bottom: 1rem;
+}

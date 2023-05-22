@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Muebles - Contato </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="py-4">
+        <h1 class="text-center">Tienda <span class="text-primary">Muebles</span></h1>
+    </header>
+
+    <div class="border-top py-4">
+        <div class="container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand d-lg-none text-uppercase text-primary fs-2 fw-bold" href="index.html">
+                Tienda Muebles
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div id="navegacion" class="collapse navbar-collapse">
+                    <nav class="container navbar-nav text-center d-flex flex-md-row justify-content-md-between">
+                        <a class="text-decoration-none text-dark" href="index.html">Inicio</a>
+                        <a class="text-decoration-none text-dark" href="nosotros.html">Nosotros</a>
+                        <a class="text-decoration-none text-dark" href="tienda.html">Tienda</a>
+                        <a class="text-decoration-none text-dark" href="blog.html">Blog</a>
+                        <a class="text-decoration-none text-dark" href="galeria.html">Galeria</a>
+                        <a class="text-decoration-none text-dark" href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+        </div>
+    </div>
+
+    <main class="container-xl py-5">
+        <h2 class="text-center my-5">Contacto</h2>
+
+        <div class="row justify-content-center">
+            <form class="col-md-8 needs-validation" novalidate>
+
+                <fieldset>
+                    <legend class="text-center bg-primary text-white fs-2 fw-bold py-1">Tus Datos</legend>
+                    <div class="mb-3">
+                        <label class="form-label" for="nombre">Nombre:</label>
+                        <input type="text" class="form-control p-3 fs-4" id="nombre" placeholder="Tu nombre"
+                        required>
+                        <span class="invalid-feedback">Hubo un error</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="asunto">Asunto:</label>
+                        <input type="text" class="form-control p-3 fs-4" id="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="nombre">Email:</label>
+                        <input type="email" class="form-control p-3 fs-4" id="email" placeholder="Tu email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="tel">Telefono:</label>
+                        <input type="tel" class="form-control p-3 fs-4" id="tel" placeholder="Tu numero">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="text-center bg-primary text-white fs-2 fw-bold py-1">Pais</legend>
+                    <div class="mb-3">
+                        <label class="form-label" for="pais">Pais:</label>
+                        <select class="fs-4 form-control"  id="pais">
+                            <option value="">--Seleccione--</option>
+                            <option value="PR">Peru</option>
+                            <option value="POL">Polonia</option>
+                            <option value="CO">Colombia</option>
+                            <option value="ES">España</option>
+                            <option value="AL">Alemania</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="text-center bg-primary text-white fs-2 fw-bold py-1">Informacion Adicional</legend>
+                    <div class="mb-3 form-check">
+                        <label class="form-label" for="cliente">Cliente:</label>
+                        <input name="tipo" type="radio" class="form-check-input p-3 fs-4" id="cliente">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <label class="form-label" for="proveedor">Proveedor:</label>
+                        <input name="tipo" type="radio" class="form-check-input p-3 fs-4" id="proveedor">
+                        <!-- los inputs deben tener el mismo name para que el navegador deje seleccionar solo uno  -->
+                    </div>
+                </fieldset>
+
+                <div class="d-grid d-md-flex">
+                    <input class=" btn btn-secondary fs-2 px-5" type="submit" value="Enviar Formulario">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="pt-5 mt-5 border-top">
+        <div class="container-xl mt-5">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <h3 class="mb-4">Categorias</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Cocina</a>
+                        <a class="text-dark text-decoration-none" href="#">Oficina</a>
+                        <a class="text-dark text-decoration-none" href="#">Jardin</a>
+                        <a class="text-dark text-decoration-none" href="#">Cochera</a>
+                        <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
+                    </nav>
+                </div>
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <h3 class="mb-4">Sobre Nosotros</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Nuestra Historia</a>
+                        <a class="text-dark text-decoration-none" href="#">Mision, Vision y Valores</a>
+                        <a class="text-dark text-decoration-none" href="#">Carreras</a>
+                        <a class="text-dark text-decoration-none" href="#">Politicas de Privacidad</a>
+                        <a class="text-dark text-decoration-none" href="#">Terminos de Servicio</a>
+                    </nav>
+                </div>
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <h3 class="mb-4">Soporte</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Preguntas Frecuentes</a>
+                        <a class="text-dark text-decoration-none" href="#">Ayuda En Linea</a>
+                        <a class="text-dark text-decoration-none" href="#">Confinza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 text-center fs-2">
+            <p>Todos los Derechos Reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
